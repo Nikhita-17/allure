@@ -1,0 +1,64 @@
+2024-11-12 16:15:22 [32mINFO[0m TR69 SSID Value: Device.WiFi.SSID.9.Name
+2024-11-12 16:15:24 [32mINFO[0m command response: eco_envoy -c get Device.WiFi.SSID.9.Name
+Device.WiFi.SSID.9.Name => ATT88jQMsU-5G
+2024-11-12 16:15:24 [32mINFO[0m TR69 Passkey Value: Device.WiFi.AccessPoint.9.Security.X_ATT_PreSharedKey
+2024-11-12 16:15:26 [32mINFO[0m command response: eco_envoy -c get Device.WiFi.AccessPoint.9.Security.X_ATT_PreSharedKey
+Device.WiFi.AccessPoint.9.Security.X_ATT_PreSharedKey => diha4f2%s2q=
+2024-11-12 16:15:27 [32mINFO[0m auth response : eco_envoy -c set Device.WiFi.AccessPoint.9.Security.ModeEnabled WPAandWPA2PSKA
+uthentication
+DM_TR181_Validate_ModeEnabled: Invalid wpa mode for 5GHz radio:failed
+DM_TR181_Set: Error. Validation failed for Device.WiFi.AccessPoint.9.Security.ModeEnabled
+2024-11-12 16:15:27 [32mINFO[0m Upstream data: 1.1.eth1
+2024-11-12 16:15:27 [32mINFO[0m Checking existing stations and layer3 connections...
+2024-11-12 16:15:28 [33mWARNING[0m Deleting existing stations
+2024-11-12 16:15:28 [32mINFO[0m Deleted ['1.1.ath10k_5g00'] Stations
+2024-11-12 16:15:28 [31m[1mERROR[0m 'NoneType' object is not iterable
+2024-11-12 16:15:28 [32mINFO[0m dut_data_ in setup_interfaces: [{'model': 'CG X94EA2CT000196', 'supported_bands': ['2G', '5G', '6G'], 'supported_modes': ['BRIDGE', 'NAT', 'VLAN'], 'wan_port': '1.1.eth1', 'lan_port': None, 'ssid': {'mode': 'BRIDGE', 'ssid_data': {}, 'radio_data': {'2G': {'channel': 1, 'bandwidth': 20, 'frequency': 2412}, '5G': {'channel': 52, 'bandwidth': 80, 'frequency': 5290}, '6G': {'channel': None, 'bandwidth': None, 'frequency': None}}}, 'mode': 'wifi6', 'identifier': 'X94EA2CT000196', 'method': 'telnet', 'host_ip': '192.168.1.254', 'host_username': 'admin', 'host_password': 'admin123', 'host_telnet_port': 23, 'prompt': 'NOS/X94EA2CT000196', 'data_model': 'TR181', 'firmware_version': 'Automation Test Image 1.0'}]
+2024-11-12 16:15:28 [32mINFO[0m All 5g radios['1.1.wiphy0', '1.1.wiphy1']
+2024-11-12 16:15:28 [32mINFO[0m DUT profile add-ssid: name: X94EA2CT000196 ssid_idx: 0 ssid: ATT88jQMsU-5G passwd: diha4f2%s2q bssid:  ssid_flags: 16 ssid_flags_mask: 4294967295
+2024-11-12 16:15:28 [31m[1mERROR[0m 
+ = = LANforge Error Messages = =
+ = = URL: http://192.168.204.80:8080/cli-json/add_dut_ssid
+  X-Error-00: Error: [-22]: 22  Invalid argument OpId: 21232: add_dut_ssid X94EA2CT000196 0 ATT88jQMsU-5G diha4f2%s2q  16 4294967295
+  X-Error-01: [add DUT SSID]: ERROR:  Not enough HEX values in the input string.
+ = = = = = = = = = = = = = = = =
+2024-11-12 16:15:28 [32mINFO[0m Setup interface data:
+"{'X94EA2CT000196': {'ssid': 'ATT88jQMsU-5G', 'bssid': '', 'passkey': 'diha4f2%s2q=', 'encryption': 'wpa', 'upstream_port': '1.1.eth1', 'upstream_resource': '1', 'upstream': 'eth1', 'station_data': {'1.1.wiphy0': ['1.1.ath10k_5g00']}, 'sniff_radio_2g': None, 'sniff_radio_5g': '1.1.wiphy1', 'sniff_radio_6g': None, 'sta_prefix': 'ath10k_5g0', 'channel': 0}}"
+2024-11-12 16:15:28 [32mINFO[0m scan ssid radio: 1.1.wiphy0
+2024-11-12 16:15:28 [32mINFO[0m scan station: ['1.1.sta00100']
+2024-11-12 16:15:31 [32mINFO[0m Found 0 out of 1 ports in 0 out of 150.0 tries in wait_until_ports_appear
+2024-11-12 16:15:33 [32mINFO[0m Found 0 out of 1 ports in 1 out of 150.0 tries in wait_until_ports_appear
+2024-11-12 16:15:35 [32mINFO[0m Found 0 out of 1 ports in 2 out of 150.0 tries in wait_until_ports_appear
+2024-11-12 16:15:37 [32mINFO[0m Found 0 out of 1 ports in 3 out of 150.0 tries in wait_until_ports_appear
+2024-11-12 16:15:39 [32mINFO[0m Found 0 out of 1 ports in 4 out of 150.0 tries in wait_until_ports_appear
+2024-11-12 16:15:39 [32mINFO[0m All 1 ports appeared
+2024-11-12 16:15:39 [32mINFO[0m All 1 ports appeared
+2024-11-12 16:16:01 [32mINFO[0m Cleaning up stations
+2024-11-12 16:16:01 [32mINFO[0m LFUtils: Waiting until 1 ports disappear...
+2024-11-12 16:16:02 [32mINFO[0m LFUtils::wait_until_ports_disappear:: Request returned None: [http://192.168.204.80:8080/port/1/1/sta00100?fields=alias]
+2024-11-12 16:16:02 [32mINFO[0m LFUtils: Waiting until 1 ports disappear...
+2024-11-12 16:16:02 [32mINFO[0m LFUtils::wait_until_ports_disappear:: Request returned None: [http://192.168.204.80:8080/port/1/1/sta00100?fields=alias]
+2024-11-12 16:16:02 [32mINFO[0m ssid scan data: [['', 'age', 'auth', 'beacon', 'bss', 'channel', 'country', 'entity id', 'frequency', 'info', 'signal', 'ssid'], ['7', '5239', 'WPA', '100', '0c:0e:76:3d:a3:90', '1', 'IN', '1.1.wiphy0', '2412', '2x2 MCS 0-9 AC', '-83.0', 'Candela-Office'], ['8', '13790', 'WPA', '100', '0c:0e:76:3d:a3:98', '153', 'IN', '1.1.wiphy0', '5765', '2x2 MCS 0-9 AC', '-87.0', 'Candela-Office'], ['13', '4662', 'WPA WPA2', '100', '38:b8:00:1d:cb:70', '10', 'US', '1.1.wiphy0', '2457', '4x4 MIMO', '-52.0', 'ATT88jQMsU-2G'], ['14', '4400', 'WPA2 WPA3', '100', '38:b8:00:1d:cb:78', '157', 'US', '1.1.wiphy0', '5785', '4x4 MCS 0-11 AX', '-67.0', 'ATT88jQMsU-5G'], ['30', '5093', 'WPA2', '100', '78:d2:94:4a:aa:eb', '3', 'NA', '1.1.wiphy0', '2422', '4x4 MCS 0-9 AC', '-88.0', 'VBC_2G'], ['46', '4734', 'WPA2', '100', 'b0:39:56:1c:3a:b6', '9', 'IN', '1.1.wiphy0', '2452', '4x4 MCS 0-9 AC', '-65.0', 'CTINV_2G'], ['47', '4379', 'WPA2', '100', 'b0:39:56:1c:3a:b7', '44', 'IN', '1.1.wiphy0', '5220', '4x4 MCS 0-9 AC', '-75.0', 'CTINV_5G'], ['64', '5222', 'WPA2', '100', 'fe:bf:77:0e:8f:5f', '1', 'IN', '1.1.wiphy0', '2412', '4x4 MCS 0-11 AX', '-86.0', 'JIO_PRIMA'], ['65', '10622', 'WPA2', '100', 'fe:bf:77:0e:8f:60', '157', 'IN', '1.1.wiphy0', '5785', '4x4 MCS 0-11 AX', '-82.0', 'JIO_PRIMA']]
+2024-11-12 16:16:04 [32mINFO[0m Found 0 out of 1 ports in 0 out of 150.0 tries in wait_until_ports_appear
+2024-11-12 16:16:04 [32mINFO[0m All 1 ports appeared
+2024-11-12 16:20:29 [32mINFO[0m station data after port reset{'4way time (us)': 0, 'activity': 0, 'aid': 0, 'alias': 'ath10k_5g00', 'anqp time (us)': 0, 'ap': 'NA', 'avg chain rssi': '', 'beacon': 0, 'bps rx': 0, 'bps rx ll': 0, 'bps tx': 0, 'bps tx ll': 0, 'bss color': 0, 'bytes rx ll': 0, 'bytes tx ll': 0, 'chain rssi': '', 'channel': '-1', 'collisions': 0, 'connections': 0, 'crypt': 0, 'cx ago': '0', 'cx time (us)': 0, 'device': 'ath10k_5g00', 'dhcp (ms)': 0, 'down': True, 'entity id': 'NA', 'gateway ip': '0.0.0.0', 'hardware': 'AX210', 'ip': '0.0.0.0', 'ipv6 address': 'DELETED', 'ipv6 gateway': 'DELETED', 'key/phrase': 'diha4f2%s2q=', 'login-fail': 0, 'login-ok': 0, 'logout-fail': 0, 'logout-ok': 0, 'mac': '00:93:37:bf:c2:58', 'mask': '0.0.0.0', 'misc': 0, 'mode': 'AUTO 20 1x1', 'mtu': '1500', 'no cx (us)': 0, 'noise': '-1 dBm', 'parent dev': 'wiphy0', 'phantom': False, 'port': '1.1.6', 'port type': 'WIFI-STA', 'pps rx': 0, 'pps tx': 0, 'qlen': '1000', 'reset': 'Complete', 'retry failed': 0, 'rx bytes': 0, 'rx crc': 0, 'rx drop': 0, 'rx errors': 0, 'rx fifo': 0, 'rx frame': 0, 'rx length': 0, 'rx miss': 0, 'rx over': 0, 'rx pkts': 0, 'rx-rate': '0 bps', 'sec': 0, 'signal': '0 dBm', 'ssid': 'ATT88jQMsU-5G', 'status': 'NONE', 'time-stamp': '2024-11-12 02:50:27.633', 'tx abort': 0, 'tx bytes': 0, 'tx crr': 0, 'tx errors': 0, 'tx fifo': 0, 'tx hb': 0, 'tx pkts': 0, 'tx wind': 0, 'tx-failed %': 0.0, 'tx-rate': '0 Mbps', 'wifi retries': 0}
+2024-11-12 16:20:29 [32mINFO[0m station info: {'1.1.ath10k_5g00': {'4way time (us)': 0, 'channel': '-1', 'cx time (us)': 0, 'dhcp (ms)': 0, 'ip': '0.0.0.0', 'signal': '0 dBm', 'mode': 'AUTO 20 1x1'}}
+2024-11-12 16:20:29 [32mINFO[0m 
+╒═════════════════╤══════════════════╤═══════════╤════════════════╤═════════════╤═════════╤══════════╤═════════════╤═════════════╕
+│ station name    │   4way time (us) │   channel │   cx time (us) │   dhcp (ms) │ ip      │ signal   │ mode        │ Pass/Fail   │
+╞═════════════════╪══════════════════╪═══════════╪════════════════╪═════════════╪═════════╪══════════╪═════════════╪═════════════╡
+│ 1.1.ath10k_5g00 │                0 │        -1 │              0 │           0 │ 0.0.0.0 │ 0 dBm    │ AUTO 20 1x1 │ Fail        │
+╘═════════════════╧══════════════════╧═══════════╧════════════════╧═════════════╧═════════╧══════════╧═════════════╧═════════════╛
+2024-11-12 16:20:29 [32mINFO[0m Cleaning up sniffer interface If available on PORT Manager
+2024-11-12 16:20:29 [32mINFO[0m pass_fail result: [False]
+2024-11-12 16:20:29 [32mINFO[0m Station did not get an ip
+2024-11-12 16:20:29 [32mINFO[0m Resource ID and Management port Mapping: {'1': '192.168.204.80'}
+2024-11-12 16:20:29 [32mINFO[0m Connected (version 2.0, client OpenSSH_8.8)
+2024-11-12 16:20:29 [32mINFO[0m Authentication (password) successful!
+2024-11-12 16:20:30 [32mINFO[0m Connected (version 2.0, client OpenSSH_8.8)
+2024-11-12 16:20:31 [32mINFO[0m Authentication (password) successful!
+2024-11-12 16:20:32 [32mINFO[0m Connected (version 2.0, client OpenSSH_8.8)
+2024-11-12 16:20:32 [32mINFO[0m Authentication (password) successful!
+2024-11-12 16:20:33 [32mINFO[0m alluredir:- ../test-dp-all-all-020
+2024-11-12 16:20:33 [32mINFO[0m os.path.isdir(alluredir):- True
+2024-11-12 16:20:33 [32mINFO[0m environment_properties:- {}

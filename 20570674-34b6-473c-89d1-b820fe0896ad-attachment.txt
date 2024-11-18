@@ -1,0 +1,36 @@
+2024-11-12 14:10:32 [32mINFO[0m TR69 SSID Value: Device.WiFi.SSID.9.Name
+2024-11-12 14:10:35 [32mINFO[0m End Of File (EOF). Exception style platform.
+<pexpect.pty_spawn.spawn object at 0x7f75c6c839a0>
+command: /usr/bin/telnet
+args: ['/usr/bin/telnet', '192.168.1.254', '23']
+buffer (last 100 chars): b''
+before (last 100 chars): b'Trying 192.168.1.254...\r\ntelnet: Unable to connect to remote host: No route to host\r\n'
+after: <class 'pexpect.exceptions.EOF'>
+match: None
+match_index: None
+exitstatus: 1
+flag_eof: True
+pid: 895359
+child_fd: 90
+closed: False
+timeout: 30
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: None
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_re:
+    0: re.compile(b'login: ')
+2024-11-12 14:10:35 [32mINFO[0m TR69 SSID Value: Device.WiFi.SSID.9.Name
+2024-11-12 14:10:38 [32mINFO[0m Connected (version 2.0, client OpenSSH_8.8)
+2024-11-12 14:10:39 [32mINFO[0m Authentication (password) successful!
+2024-11-12 14:10:40 [32mINFO[0m Connected (version 2.0, client OpenSSH_8.8)
+2024-11-12 14:10:40 [32mINFO[0m Authentication (password) successful!
+2024-11-12 14:10:41 [32mINFO[0m alluredir:- ../test-dp-all-all-020
+2024-11-12 14:10:41 [32mINFO[0m os.path.isdir(alluredir):- True
+2024-11-12 14:10:41 [32mINFO[0m environment_properties:- {}
